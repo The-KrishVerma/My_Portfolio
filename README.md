@@ -25,23 +25,4 @@ It represents who I am as a **developer**, my **technical journey**, and the **p
 | Hosting | [Netlify.app](https://www.netlify.com/) |
 
 ---
-
-## ⚙️ Installation & Setup
-
-To run this project locally, make sure you have **Node.js** and **npm** installed.  
-You can install Node via [nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```bash
-# Step 1: Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Step 2: Move into the project folder
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install dependencies
-npm install
-
-# Step 4: Start the development server
-npm run dev
-
 a good readme file for my portfoilio
