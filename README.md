@@ -26,8 +26,6 @@ It represents who I am as a **developer**, my **technical journey**, and the **p
 
 ---
 
----
-
 ## 🌟 Closing Note
 
 This portfolio is a reflection of my journey — where passion meets code.  
