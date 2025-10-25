@@ -25,4 +25,12 @@ It represents who I am as a **developer**, my **technical journey**, and the **p
 | Hosting | [Netlify.app](https://www.netlify.com/) |
 
 ---
-a good readme file for my portfoilio
+
+---
+
+## 🌟 Closing Note
+
+This portfolio is a reflection of my journey — where passion meets code.  
+Thank you for taking the time to visit, and I hope you enjoy exploring my work as much as I enjoyed creating it!
+
+> Crafted with ❤️ by **Krish Verma**
