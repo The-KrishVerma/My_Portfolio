@@ -84,7 +84,7 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
           <div className="animate-fade-in">
             <Card className="bg-card border-border card-shadow h-full">
               <CardContent className="p-8">
