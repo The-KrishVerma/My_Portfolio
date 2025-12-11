@@ -86,41 +86,34 @@ const Contact = () => {
         
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
           <div className="animate-fade-in">
-            <Card className="bg-card border-border card-shadow h-full">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6 text-accent">Let's Connect</h3>
-                <p className="text-muted-foreground mb-8 leading-relaxed">
-                  I'm always interested in discussing new opportunities, collaborative projects, 
-                  or just having a conversation about technology and innovation. Feel free to reach out!
-                </p>
-                
-                <div className="space-y-6">
-                  {contactInfo.map((item, index) => (
-                    <Card key={index} className="bg-background border-border hover:border-accent/50 transition-all duration-300 group">
-                      <CardContent className="p-4">
-                        <a 
-                          href={item.href}
-                          className="flex items-center space-x-4 group-hover:text-accent transition-colors duration-200"
-                        >
-                          <div className="text-2xl animate-float" style={{animationDelay: `${index * 0.2}s`}}>
-                            {item.icon}
-                          </div>
-                          <div>
-                            <p className="font-medium">{item.label}</p>
-                            <p className="text-muted-foreground">{item.value}</p>
-                          </div>
-                        </a>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            <h3 className="text-2xl font-bold mb-6 text-accent">Let's Connect</h3>
+            <p className="text-muted-foreground mb-8 leading-relaxed">
+              I'm always interested in discussing new opportunities, collaborative projects, 
+              or just having a conversation about technology and innovation. Feel free to reach out!
+            </p>
+            
+            <div className="space-y-6">
+              {contactInfo.map((item, index) => (
+                <a 
+                  key={index}
+                  href={item.href}
+                  className="flex items-center space-x-4 p-4 rounded-lg bg-card/30 backdrop-blur-md border border-white/10 hover:border-accent/50 hover:bg-card/50 transition-all duration-300 group"
+                >
+                  <div className="text-2xl animate-float" style={{animationDelay: `${index * 0.2}s`}}>
+                    {item.icon}
+                  </div>
+                  <div>
+                    <p className="font-medium group-hover:text-accent transition-colors duration-200">{item.label}</p>
+                    <p className="text-muted-foreground">{item.value}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
           </div>
           
           <div className="animate-slide-up">
             <Card className="bg-card border-border card-shadow h-full">
-              <CardContent className="p-8">
+              <CardContent className="p-6 md:p-8">
                 <h3 className="text-2xl font-bold mb-6 text-accent">Send a Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
