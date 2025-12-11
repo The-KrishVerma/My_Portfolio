@@ -72,7 +72,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 gradient-primary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -86,36 +86,40 @@ const Contact = () => {
         
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="animate-fade-in">
-            <h3 className="text-2xl font-bold mb-6 text-accent">Let's Connect</h3>
-            <p className="text-muted-foreground mb-8 leading-relaxed">
-              I'm always interested in discussing new opportunities, collaborative projects, 
-              or just having a conversation about technology and innovation. Feel free to reach out!
-            </p>
-            
-            <div className="space-y-6">
-              {contactInfo.map((item, index) => (
-                <Card key={index} className="bg-card border-border hover:border-accent/50 transition-all duration-300 group">
-                  <CardContent className="p-4">
-                    <a 
-                      href={item.href}
-                      className="flex items-center space-x-4 group-hover:text-accent transition-colors duration-200"
-                    >
-                      <div className="text-2xl animate-float" style={{animationDelay: `${index * 0.2}s`}}>
-                        {item.icon}
-                      </div>
-                      <div>
-                        <p className="font-medium">{item.label}</p>
-                        <p className="text-muted-foreground">{item.value}</p>
-                      </div>
-                    </a>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <Card className="bg-card border-border card-shadow h-full">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold mb-6 text-accent">Let's Connect</h3>
+                <p className="text-muted-foreground mb-8 leading-relaxed">
+                  I'm always interested in discussing new opportunities, collaborative projects, 
+                  or just having a conversation about technology and innovation. Feel free to reach out!
+                </p>
+                
+                <div className="space-y-6">
+                  {contactInfo.map((item, index) => (
+                    <Card key={index} className="bg-background border-border hover:border-accent/50 transition-all duration-300 group">
+                      <CardContent className="p-4">
+                        <a 
+                          href={item.href}
+                          className="flex items-center space-x-4 group-hover:text-accent transition-colors duration-200"
+                        >
+                          <div className="text-2xl animate-float" style={{animationDelay: `${index * 0.2}s`}}>
+                            {item.icon}
+                          </div>
+                          <div>
+                            <p className="font-medium">{item.label}</p>
+                            <p className="text-muted-foreground">{item.value}</p>
+                          </div>
+                        </a>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </div>
           
           <div className="animate-slide-up">
-            <Card className="bg-card border-border card-shadow">
+            <Card className="bg-card border-border card-shadow h-full">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6 text-accent">Send a Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">

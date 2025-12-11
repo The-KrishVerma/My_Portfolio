@@ -10,7 +10,7 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
       
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'experience', 'skills', 'projects', 'contact'];
+      const sections = ['home', 'about', 'experience', 'skills', 'coding-profiles', 'projects', 'contact'];
       const scrollPosition = window.scrollY + 100;
       
       for (const section of sections) {
@@ -43,6 +43,7 @@ const Navigation = () => {
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
+    { id: 'coding-profiles', label: 'Coding Profiles' },
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' },
   ];
@@ -57,7 +58,7 @@ const Navigation = () => {
             <img src="https://i.postimg.cc/50Sqj75b/Whats-App-Image-2025-06-30-at-3-07-10-PM.jpg" alt="Krish Verma Logo" style={{ height: '40px', transform: 'scale(1.5)', transformOrigin: 'left' }} />
           </div>
           
-          <div className="hidden md:flex items-center space-x-16">
+          <div className="hidden md:flex items-center space-x-12">
             {navItems.map((item) => (
               <button
                 key={item.id}

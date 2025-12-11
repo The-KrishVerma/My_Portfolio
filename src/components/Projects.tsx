@@ -26,7 +26,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 gradient-primary">
+    <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -97,29 +97,6 @@ const Projects = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-        
-        <div className="text-center">
-          <Card className="bg-card border-accent/20 max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <div className="text-4xl mb-4 animate-float">🔧</div>
-              <h3 className="text-2xl font-bold mb-4 text-accent">Portfolio Under Development</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                I'm currently working on exciting projects that showcase my skills in mobile development, 
-                web technologies, and emerging tech. Check back soon to see my latest work!
-              </p>
-              <Button 
-                variant="outline" 
-                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-                onClick={() => {
-                  const element = document.getElementById('contact');
-                  if (element) element.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Get In Touch
-              </Button>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
