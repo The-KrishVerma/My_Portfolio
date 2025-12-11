@@ -70,7 +70,7 @@ const Hero = () => {
             </div>
 
             {/* Quick Links */}
-            <div className="flex flex-wrap items-center gap-2 pt-6">
+            <div className="flex flex-col md:flex-row items-center gap-2 pt-6">
               <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent hover:bg-accent/10" asChild>
                 <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <Github size={22} />
