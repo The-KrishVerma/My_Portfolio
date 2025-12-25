@@ -5,7 +5,7 @@ const About = () => {
     institution: "Indian Institute of Information Technology, Allahabad",
     year: "2024 - 2028",
     status: "Current",
-    description: "CGPA: 8.83 (Top 5% of batch). Pursuing Bachelor's degree with focus on software development, data structures, algorithms, and emerging technologies."
+    description: "CGPA: 8.8 (Top 5% of batch). Pursuing Bachelor's degree with focus on software development, data structures, algorithms, and emerging technologies."
   }, {
     degree: "Class XII (CBSE)",
     institution: "Police DAV Public School, Ambala City",
