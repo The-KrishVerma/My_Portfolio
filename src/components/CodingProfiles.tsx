@@ -16,7 +16,7 @@ const CodingProfiles = () => {
     {
       name: 'Codeforces',
       icon: <Zap className="w-8 h-8 text-blue-400" />,
-      link: 'https://codeforces.com/profile/_KrishVerma_',
+      link: 'https://codeforces.com/profile/The-KrishVerma',
       skills: ['Pupil Rank'],
       summary: '1200+ Rated (Pupil)',
       color: 'bg-blue-500/20 text-blue-400 border-blue-400/30'
