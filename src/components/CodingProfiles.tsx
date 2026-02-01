@@ -100,7 +100,7 @@ const CodingProfiles = () => {
             <div className="flex items-center gap-2">
               <Target className="w-5 h-5 text-accent" />
               <span className="text-sm text-muted-foreground">Problems Solved:</span>
-              <span className="font-bold text-foreground">1000+</span>
+              <span className="font-bold text-foreground">1200+</span>
             </div>
           </div>
         </div>
