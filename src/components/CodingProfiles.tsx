@@ -10,7 +10,7 @@ const CodingProfiles = () => {
       icon: <Code2 className="w-8 h-8 text-orange-400" />,
       link: 'https://leetcode.com/u/_KrishVerma_/',
       skills: ['650+ Problems Solved'],
-      summary: 'Solved 650+ problems',
+      summary: 'Solved 800+ problems',
       color: 'bg-orange-500/20 text-orange-400 border-orange-400/30'
     },
     {
@@ -100,7 +100,7 @@ const CodingProfiles = () => {
             <div className="flex items-center gap-2">
               <Target className="w-5 h-5 text-accent" />
               <span className="text-sm text-muted-foreground">Problems Solved:</span>
-              <span className="font-bold text-foreground">1200+</span>
+              <span className="font-bold text-foreground">1500+</span>
             </div>
           </div>
         </div>
