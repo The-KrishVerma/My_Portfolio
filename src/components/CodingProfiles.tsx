@@ -8,7 +8,7 @@ const CodingProfiles = () => {
     {
       name: 'LeetCode',
       icon: <Code2 className="w-8 h-8 text-orange-400" />,
-      link: 'https://leetcode.com/u/_KrishVerma_/',
+      link: 'https://leetcode.com/u/The-KrishVerma/',
       skills: ['900+ Problems Solved'],
       summary: 'Solved 900+ problems',
       color: 'bg-orange-500/20 text-orange-400 border-orange-400/30'
