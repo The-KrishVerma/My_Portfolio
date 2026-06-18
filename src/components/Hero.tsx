@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
-import { ArrowDown, Calendar, Download, Github, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
+import { ArrowDown, Calendar, Download, Github, Instagram, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
 import krishProfile from '@/assets/krish-profile-new.jpg';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -66,25 +66,20 @@ const Hero = () => {
             </div>
 
             {/* Quick Links */}
-            <div className="flex flex-col md:flex-row items-center gap-2 pt-6">
-              <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent hover:bg-accent/10" asChild>
-                <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  <Github size={22} />
-                  <span className="text-lg font-medium">GitHub</span>
+            <div className="flex items-center gap-4 pt-4">
+              <div className="flex items-center gap-3 p-2 px-4 bg-card/30 backdrop-blur-md rounded-full border border-white/10 card-shadow">
+                <a href="https://github.com/The-KrishVerma" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform" title="GitHub">
+                  <Github size={20} />
                 </a>
-              </Button>
-              <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent hover:bg-accent/10" asChild>
-                <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                  <Linkedin size={22} />
-                  <span className="text-lg font-medium">LinkedIn</span>
+                <div className="w-px h-4 bg-white/10"></div>
+                <a href="https://www.linkedin.com/in/the-krishverma/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform" title="LinkedIn">
+                  <Linkedin size={20} />
                 </a>
-              </Button>
-              <Button variant="ghost" size="lg" className="text-muted-foreground hover:text-accent hover:bg-accent/10" asChild>
-                <a href="mailto:krishverma060306@gmail.com" className="flex items-center gap-2">
-                  <Mail size={22} />
-                  <span className="text-lg font-medium">Email</span>
+                <div className="w-px h-4 bg-white/10"></div>
+                <a href="https://www.instagram.com/_.krish_verma._/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform" title="Instagram">
+                  <Instagram size={20} />
                 </a>
-              </Button>
+              </div>
             </div>
           </div>
 
