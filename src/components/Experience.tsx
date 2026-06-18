@@ -14,17 +14,6 @@ const Experience = () => {
       ],
       technologies: ["Flutter", "React Native", "UI/UX Design", "Mobile Development"]
     },
-    {
-      title: "Out of Context Hackathon - UI/UX Designer",
-      period: "Dec 2024",
-      type: "Competition",
-      description: [
-        "Created wireframes and interactive prototypes in a 48-hour sprint using Figma",
-        "Focused on inclusive, user-friendly designs for diverse audiences",
-        "Collaborated with developers to ensure design feasibility and implementation"
-      ],
-      technologies: ["Figma", "UI/UX Design", "Prototyping", "User Research"]
-    }
   ];
 
   return (
