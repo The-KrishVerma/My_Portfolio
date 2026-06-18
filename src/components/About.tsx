@@ -9,13 +9,13 @@ const About = () => {
   }, {
     degree: "Class XII (CBSE)",
     institution: "Police DAV Public School, Ambala City",
-    year: "2022 - 2024",
+    year: "2023 - 2024",
     status: "Completed",
     description: "Score: 93.8%. Completed higher secondary education with strong foundation in mathematics and computer science."
   }, {
     degree: "Class X (CBSE)",
     institution: "DAV Public School, Ambala Cantt",
-    year: "2012 - 2022",
+    year: "2021 - 2022",
     status: "Completed",
     description: "Score: 92%. Completed secondary education with excellent academic performance."
   }];
