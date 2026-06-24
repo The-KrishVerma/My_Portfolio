@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { ArrowDown, Calendar, Download, Github, Instagram, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
-import krishProfile from '@/assets/ProfileImg.jpg';
+import krishProfile from '@/ProfileImg.jpg';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero = () => {
