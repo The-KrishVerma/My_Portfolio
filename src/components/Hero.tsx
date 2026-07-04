@@ -58,7 +58,7 @@ const Hero = () => {
                 Get In Touch
               </Button>
               <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground group">
-                <a href="/Krish_Verma_Resume.pdf" download>
+                <a href="/Krish_Verma.pdf" download>
                   <Download className="w-4 h-4 mr-2" />
                   Download CV
                 </a>
