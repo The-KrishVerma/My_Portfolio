@@ -9,8 +9,8 @@ const CodingProfiles = () => {
       name: 'LeetCode',
       icon: <Code2 className="w-8 h-8 text-orange-400" />,
       link: 'https://leetcode.com/u/The-KrishVerma/',
-      skills: ['900+ Problems Solved'],
-      summary: 'Solved 900+ problems',
+      skills: ['1000+ Problems Solved'],
+      summary: '1600+ Rated',
       color: 'bg-orange-500/20 text-orange-400 border-orange-400/30'
     },
     {
@@ -34,14 +34,11 @@ const CodingProfiles = () => {
   return (
     <section id="coding-profiles" className="py-16 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Coding <span className="text-gradient">Profiles</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 text-lg max-w-2xl mx-auto">
-            My journey in competitive programming and problem-solving.
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

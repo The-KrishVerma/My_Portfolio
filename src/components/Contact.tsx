@@ -74,14 +74,11 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 gradient-primary">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 text-lg max-w-2xl mx-auto">
-            Let's collaborate on exciting projects or discuss opportunities in technology
-          </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">

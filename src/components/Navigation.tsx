@@ -10,7 +10,7 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
       
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'experience', 'projects', 'skills', 'coding-profiles', 'contact'];
+      const sections = ['home', 'education', 'experience', 'projects', 'skills', 'coding-profiles', 'contact'];
       const scrollPosition = window.scrollY + 100;
       
       for (const section of sections) {
@@ -40,7 +40,7 @@ const Navigation = () => {
 
   const navItems = [
     { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
+    { id: 'education', label: 'Education' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'skills', label: 'Skills' },
@@ -53,12 +53,10 @@ const Navigation = () => {
       isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-border' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <img src="https://i.postimg.cc/50Sqj75b/Whats-App-Image-2025-06-30-at-3-07-10-PM.jpg" alt="Krish Verma Logo" style={{ height: '40px', transform: 'scale(1.5)', transformOrigin: 'left' }} />
-          </div>
+        <div className="flex items-center justify-between relative">
+          <div className="flex-1"></div>
           
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden md:flex items-center justify-center space-x-12 flex-none">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -72,13 +70,15 @@ const Navigation = () => {
             ))}
           </div>
           
-          <Button 
-            variant="outline" 
-            className="hidden md:block border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-200"
-            onClick={() => scrollToSection('contact')}
-          >
-            Get In Touch
-          </Button>
+          <div className="flex-1 flex justify-end">
+            <Button 
+              variant="outline" 
+              className="hidden md:block border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-200"
+              onClick={() => scrollToSection('contact')}
+            >
+              Get In Touch
+            </Button>
+          </div>
         </div>
       </div>
     </nav>

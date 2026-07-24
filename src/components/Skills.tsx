@@ -44,14 +44,11 @@ const Skills = () => {
   return (
     <section id="skills" className="py-16 gradient-primary">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             My <span className="text-gradient">Skills</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 text-lg max-w-2xl mx-auto">
-            A diverse toolkit for building modern, scalable solutions
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

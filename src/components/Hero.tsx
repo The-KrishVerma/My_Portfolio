@@ -1,12 +1,48 @@
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
-import { ArrowDown, Calendar, Download, Github, Instagram, Linkedin, Mail, MapPin, Sparkles } from 'lucide-react';
+import { ArrowDown, Calendar, Download, Github, Instagram, Linkedin, Mail, MapPin, Sparkles, Code } from 'lucide-react';
 import krishProfile from '@/ProfileImg.jpg';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const Hero = () => {
   const isMobile = useIsMobile();
+  const titles = [
+    "AI/ML Explorer",
+    "Problem Solver", 
+    "Competitive Programmer",
+    "Tech Enthusiast"
+  ];
+  const [text, setText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  useEffect(() => {
+    let ticker = setTimeout(() => {
+      const i = loopNum % titles.length;
+      const fullText = titles[i];
+
+      if (isDeleting) {
+        setText(fullText.substring(0, text.length - 1));
+        setTypingSpeed(50);
+      } else {
+        setText(fullText.substring(0, text.length + 1));
+        setTypingSpeed(100);
+      }
+
+      if (!isDeleting && text === fullText) {
+        setTimeout(() => setIsDeleting(true), 1500);
+      } else if (isDeleting && text === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        setTypingSpeed(500);
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(ticker);
+  }, [text, isDeleting, loopNum, typingSpeed]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -26,25 +62,19 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Enhanced Left Content */}
           <div className="animate-fade-in space-y-8">
-            {/* Status Badge */}
-            <Badge variant="outline" className="border-accent text-accent bg-accent/10 backdrop-blur-sm w-fit">
-              <Calendar className="w-3 h-3 mr-1" />
-              Available for Opportunities
-            </Badge>
+            {/* Status Badge removed */}
 
             <div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
-                Krish Verma,
-                <span className="block text-gradient mt-2">Tech Enthusiast</span>
+              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                Krish Verma
+                <span className="block text-3xl md:text-5xl text-gradient mt-3 pb-2 min-h-[3rem] md:min-h-[4rem]">
+                  <span className="border-r-4 border-accent pr-1 animate-pulse">{text}</span>
+                </span>
               </h1>
-              <div className="flex items-center gap-2 text-muted-foreground mb-6">
-                <MapPin size={16} />
-                <span>IIIT Allahabad • B.Tech IT Student</span>
-              </div>
             </div>
 
             <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-              Passionate about solving real-world problems through technology. Building the future with <span className="text-accent font-medium">code</span>, <span className="text-accent font-medium">innovation</span>, and <span className="text-accent font-medium">creativity</span>.
+              Passionate about solving real-world problems through technology. Building the future with <span className="text-accent font-medium">code</span>, <span className="text-accent font-medium">innovation</span>, <span className="text-accent font-medium">creativity</span>, and <span className="text-accent font-medium">continuous learning</span>.
             </p>
 
             {/* Action Buttons */}
@@ -52,10 +82,6 @@ const Hero = () => {
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground glow-accent group" onClick={() => scrollToSection('projects')}>
                 <Sparkles className="w-4 h-4 mr-2 group-hover:animate-spin" />
                 View My Work
-              </Button>
-              <Button variant="outline" size="lg" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground group" onClick={() => scrollToSection('contact')}>
-                <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
               </Button>
               <Button asChild size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground group">
                 <a href="/Krish_Verma.pdf" download>
@@ -85,7 +111,7 @@ const Hero = () => {
 
           {/* Enhanced Right Content */}
           <div className="relative animate-slide-up">
-            <div className="relative">
+            <div className="relative w-fit mx-auto">
               <div className="relative bg-card/50 backdrop-blur-md rounded-3xl p-3 card-shadow border border-white/10">
                 <div className="absolute inset-0 bg-gradient-accent rounded-3xl blur-xl opacity-20"></div>
                 <div className="relative group">

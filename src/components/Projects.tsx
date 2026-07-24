@@ -5,6 +5,12 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projectData = [
     {
+      title: "NIFTYIQ",
+      description: "A comprehensive financial intelligence platform focused on the NIFTY index. It provides real-time market data analysis, interactive visualization charts, and actionable insights to help users make informed stock market decisions.",
+      technologies: ["React", "TypeScript", "Node.js"],
+      codeLink: "https://github.com/The-KrishVerma/NIFTYIQ.git"
+    },
+    {
       title: "NewsCloud",
       description: "A news aggregation platform that collects real-time news headlines from an API, generates AI-powered summaries, and allows users to browse news by categories and search news using keywords.",
       technologies: ["React", "News API", "JavaScript"],
@@ -12,31 +18,22 @@ const Projects = () => {
       codeLink: "https://github.com/The-KrishVerma/NewsCloud.git"
     },
     {
-      title: "CampusVoice",
-      description: "A full-stack blogging platform that uses Google Gemini AI to automatically generate content and allows users to write blogs with rich text editing, image uploads, draft saving, and category-based organization.",
-      technologies: ["MongoDB", "React", "Node.js"],
+      title: "CampusConnect",
+      description: "A full-stack MERN campus portal serving as a centralized hub for students to manage university services. It features a secure admin dashboard powered by Google Gemini AI for auto-generating rich-text announcements.",
+      technologies: ["MERN Stack", "Tailwind CSS", "Gemini API"],
       liveLink: "https://the-campusvoice.vercel.app/",
       codeLink: "https://github.com/The-KrishVerma/CampusVoice.git"
-    },
-    {
-      title: "Coming Soon",
-      description: "Working on a new and exciting project. Stay tuned for more updates!",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-      status: "Coming Soon"
     }
   ];
 
   return (
     <section id="projects" className="py-16 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             My <span className="text-gradient">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 text-lg max-w-2xl mx-auto">
-            Exploring ideas and building solutions through code
-          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
