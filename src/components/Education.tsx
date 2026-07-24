@@ -4,7 +4,7 @@ import { MapPin } from 'lucide-react';
 const Education = () => {
   const education = [{
     degree: "B.Tech in Information Technology",
-    institution: "Indian Institute of Information Technology, Allahabad",
+    institution: "Indian Institute of Information Technology Allahabad",
     location: "Prayagraj, Uttar Pradesh",
     year: "2024 - 2028",
     status: "Current",
