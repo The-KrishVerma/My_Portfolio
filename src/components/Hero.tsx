@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
-import { ArrowDown, Calendar, Download, Github, Instagram, Linkedin, Mail, MapPin, Sparkles, Code } from 'lucide-react';
+import { Download, Github, Instagram, Linkedin, Sparkles } from 'lucide-react';
 import krishProfile from '@/ProfileImg.jpg';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -62,8 +61,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Enhanced Left Content */}
           <div className="animate-fade-in space-y-8">
-            {/* Status Badge removed */}
-
             <div>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                 Krish Verma

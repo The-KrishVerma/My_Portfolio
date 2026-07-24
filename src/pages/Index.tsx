@@ -3,7 +3,7 @@ import Hero from '@/components/Hero';
 import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
-import Skills from '@/components/Skills';
+import TechnicalSkills from '@/components/TechnicalSkills';
 import CodingProfiles from '@/components/CodingProfiles';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -17,7 +17,7 @@ const Index = () => {
         <Education />
         <Experience />
         <Projects />
-        <Skills />
+        <TechnicalSkills />
         <CodingProfiles />
         <Contact />
       </main>

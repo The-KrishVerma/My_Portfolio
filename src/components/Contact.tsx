@@ -12,19 +12,16 @@ const Contact = () => {
   
   const contactInfo = [
     {
-      icon: "📧",
       label: "Email",
       value: "krishverma060306@gmail.com",
       href: "mailto:krishverma060306@gmail.com"
     },
     {
-      icon: "📱",
       label: "Phone",
       value: "+91-8816920603",
       href: "tel:+918816920603"
     },
     {
-      icon: "📍",
       label: "Location",
       value: "Ambala, Haryana, India",
       href: "https://maps.google.com/?q=Ambala,Haryana,India"
@@ -96,9 +93,6 @@ const Contact = () => {
                   href={item.href}
                   className="flex items-center space-x-4 p-4 rounded-lg bg-card/30 backdrop-blur-md border border-white/10 hover:border-accent/50 hover:bg-card/50 transition-all duration-300 group"
                 >
-                  <div className="text-2xl animate-float" style={{animationDelay: `${index * 0.2}s`}}>
-                    {item.icon}
-                  </div>
                   <div>
                     <p className="font-medium group-hover:text-accent transition-colors duration-200">{item.label}</p>
                     <p className="text-muted-foreground">{item.value}</p>
