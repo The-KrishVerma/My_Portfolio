@@ -99,7 +99,7 @@ const Hero = () => {
                   <Linkedin size={20} />
                 </a>
                 <div className="w-px h-4 bg-white/10"></div>
-                <a href="https://www.instagram.com/_.krish_verma._/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform" title="Instagram">
+                <a href="https://www.instagram.com/_krish.verma_/" target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-accent transition-colors duration-300 hover:scale-110 transform" title="Instagram">
                   <Instagram size={20} />
                 </a>
               </div>
