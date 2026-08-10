@@ -28,7 +28,7 @@ const CodingProfiles = () => {
       icon: <LeetCodeIcon className="w-10 h-10 text-orange-400" />,
       link: 'https://leetcode.com/u/The-KrishVerma/',
       skills: ['1000+ Problems Solved'],
-      summary: '1600+ Rated',
+      summary: 'Max Rating: 1648',
       color: 'bg-orange-500/20 text-orange-400 border-orange-400/30'
     },
     {
@@ -36,7 +36,7 @@ const CodingProfiles = () => {
       icon: <CodeforcesIcon className="w-10 h-10 text-blue-400" />,
       link: 'https://codeforces.com/profile/The-KrishVerma',
       skills: ['Pupil Rank'],
-      summary: '1300+ Rated (Pupil)',
+      summary: 'Max Rating: 1308',
       color: 'bg-blue-500/20 text-blue-400 border-blue-400/30'
     },
     {
@@ -44,7 +44,7 @@ const CodingProfiles = () => {
       icon: <CodeChefIcon className="w-10 h-10 text-green-400" />,
       link: 'https://www.codechef.com/users/krish_verma636',
       skills: ['3 Star Rating'],
-      summary: '1600+ Rated (3 Star)',
+      summary: 'Max Rating: 1649',
       color: 'bg-green-500/20 text-green-400 border-green-400/30'
     }
   ];
