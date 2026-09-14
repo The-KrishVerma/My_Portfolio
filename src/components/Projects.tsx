@@ -22,7 +22,7 @@ const Projects = () => {
       title: "CampusConnect",
       description: "A full-stack MERN campus portal serving as a centralized hub for students to manage university services. It features a secure admin dashboard powered by Google Gemini AI for auto-generating rich-text announcements.",
       technologies: ["MERN Stack", "Tailwind CSS", "Gemini API"],
-      liveLink: "https://the-campusvoice.vercel.app/",
+      liveLink: "https://the-campusconnect.vercel.app/",
       codeLink: "https://github.com/The-KrishVerma/CampusVoice.git"
     }
   ];
