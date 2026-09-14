@@ -3,8 +3,17 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
 
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  codeLink?: string;
+  liveLink?: string;
+  status?: string;
+}
+
 const Projects = () => {
-  const projectData = [
+  const projectData: Project[] = [
     {
       title: "NIFTYIQ",
       description: "A comprehensive financial intelligence platform focused on the NIFTY index. It provides real-time market data analysis, interactive visualization charts, and actionable insights to help users make informed stock market decisions.",
@@ -23,7 +32,7 @@ const Projects = () => {
       description: "A full-stack MERN campus portal serving as a centralized hub for students to manage university services. It features a secure admin dashboard powered by Google Gemini AI for auto-generating rich-text announcements.",
       technologies: ["MERN Stack", "Tailwind CSS", "Gemini API"],
       liveLink: "https://the-campusconnect.vercel.app/",
-      codeLink: "https://github.com/The-KrishVerma/CampusVoice.git"
+      codeLink: "https://github.com/The-KrishVerma/CampusConnect.git"
     }
   ];
 
